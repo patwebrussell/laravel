@@ -1,5 +1,5 @@
 {
-    "name": "php-tmdb/laravel",
+    "name": "webrussell/php-tmdb",
     "description": "Laravel 7.x Package for TMDB ( The Movie Database ) API. Provides easy access to the wtfzdotnet/php-tmdb-api library.",
     "keywords": ["Laravel", "tmdb", "api", "php", "wrapper", "movie", "tv", "tv show", "tvdb"],
     "authors": [
