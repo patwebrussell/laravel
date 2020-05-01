@@ -5,6 +5,9 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/php-tmdb/laravel/badges/coverage.png)](https://scrutinizer-ci.com/g/php-tmdb/laravel/)
 [![PHP & HHVM](https://php-eye.com/badge/php-tmdb/laravel/tested.svg)](https://php-eye.com/package/php-tmdb/laravel)
 
+This package was created originaly by travis but was frozen in time with Laravel 5.4 requirement. This version of the same package was build to be compatible with laravel 7.X
+
+## Description
 A Laravel package that provides easy access to the [php-tmdb/api](https://github.com/php-tmdb/api) TMDB (The Movie Database) API wrapper.
 This package comes with a service provider that configures the `Tmdb\Client` and registers it to the IoC container.
 Both Laravel 5 and 4 are supported.
@@ -13,10 +16,6 @@ Both Laravel 5 and 4 are supported.
 [![Latest Unstable Version](https://poser.pugx.org/php-tmdb/laravel/v/unstable.svg)](https://packagist.org/packages/php-tmdb/laravel)
 [![Dependency Status](https://www.versioneye.com/php/php-tmdb:laravel/badge?style=flat)](https://www.versioneye.com/php/php-tmdb:laravel)
 [![Total Downloads](https://poser.pugx.org/php-tmdb/laravel/downloads.svg)](https://packagist.org/packages/php-tmdb/laravel)
-
-## Looking for maintainers
-
-*We are urgently looking for new mainteners of this library, we need someone that can steer this package in the right direction for the Laravel community, we do not currently have anybody on the `php-tmdb` team that uses laravel on a daily basis. We want the default standards to be met and unit tests to be available just to verify the part of the integration with the framework works. Send an email to `php-laravel@wtfz.net` if you are interested, or are willing to help out.*
 
 ## Installation
 
@@ -30,13 +29,13 @@ $ sudo mv composer.phar /usr/local/bin/composer
 Add the following to your require block in `composer.json` config
 
 ```
-"php-tmdb/laravel": "~1.0"
+"webrussell/php-tmdb": "~1.0"
 ```
 
 or just run the following command in your project:
 
 ```
-composer require php-tmdb/laravel
+composer require webrussell/php-tmdb
 ```
 
 ## Configuration
@@ -53,13 +52,7 @@ Add to your `app/config/app.php` (Laravel 4) or `config/app.php` (Laravel <5.5) 
 
 Then publish the configuration file:
 
-### Laravel 4
-
-```
-php artisan config:publish php-tmdb/laravel
-```
-
-### Laravel 5
+### Laravel 7
 
 ```
 php artisan vendor:publish --provider="Tmdb\Laravel\TmdbServiceProviderLaravel5"
